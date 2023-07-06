@@ -1,0 +1,122 @@
+/* Estilos globais */
+body {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3cccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #f51f1f;
+    color: #f8f8f8;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header ul li a {
+    color: #fafafa;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+header ul li a:hover {
+    background-color: #111010;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+aside {
+    flex-basis: 50%;
+    padding: 20px;
+    background-color: #f7f3f3;
+    
+}
+
+aside h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+aside p {
+    line-height: 1.5;
+    
+}
+
+form {
+    margin-top: 20px;
+   
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    
+}
+
+form input[type="submit"] {
+    background-color: #070707;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+article {
+    flex-basis: 50%;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+
+
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    background-color: #976bdd;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 400px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside, article {
+        flex-basis: 100%;
+    }
+}
